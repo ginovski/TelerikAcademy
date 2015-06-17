@@ -4,8 +4,8 @@
 <ul>
   <li>Module 1
     <ul>
-      <li>C# Part 1</li>
-      <li>C# Part 2</li>
+      <li><a href="https://github.com/ginovski/TelerikAcademy/tree/master/C%23%20Part%201">C# Part 1</a></li>
+      <li><a href="https://github.com/ginovski/TelerikAcademy/tree/master/C%23%20Part%202">C# Part 2</a></li>
       <li>OOP</li>
       <li><a href="https://github.com/ginovski/TelerikAcademy/tree/master/HTML">HTML</a></li>
       <li><a href="https://github.com/ginovski/TelerikAcademy/tree/master/CSS">CSS</a></li>
