@@ -1,5 +1,5 @@
 Homework: Defining Classes - Part 1
-===================================
+====================================
 
 ### Problem 1. Define class
 *	Define a class that holds information about a mobile phone device: model, manufacturer, price, owner, battery characteristics (model, hours idle and hours talk) and display characteristics (size and number of colors).
