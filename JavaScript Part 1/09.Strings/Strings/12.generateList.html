@@ -1,0 +1,46 @@
+<!--12.Write a function that creates a HTML <ul> using a template for every HTML <li>.-->
+    <!--The source of the list should be an array of elements.-->
+    <!--Replace all placeholders marked with –{…}– with the value of the corresponding property of the object.-->
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div data-type="template" id="list-item" style="display: none">
+        <strong>-{name}-</strong> <span>-{age}-</span>
+    </div>
+    <script>
+        var people = [
+            {name: 'Gosho', age: 14},
+            {name: 'Peter', age: 14},
+            {name: 'Spas', age: 14}
+        ];
+        var template = document.getElementById('list-item').innerHTML;
+        var peopleList = generateList(people, template);
+
+        function generateList(people, template) {
+            var ul = document.createElement('ul'),
+                person, li, index;
+            for (index in people) {
+                person = people[index];
+
+                li = document.createElement('li');
+                li.innerHTML = formatTemplate(person, template);
+                ul.appendChild(li);
+            }
+
+            document.body.appendChild(ul);
+        }
+
+        function formatTemplate(person, template){
+            var formated = template.replace(/\-\{([a-z]+)\}\-/g, function($template, $param){
+               return person[$param];
+            });
+
+            return formated;
+        }
+    </script>
+</body>
+</html>
