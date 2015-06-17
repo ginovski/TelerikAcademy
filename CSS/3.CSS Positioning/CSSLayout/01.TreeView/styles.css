@@ -1,0 +1,26 @@
+﻿ul {
+    list-style-type:none;
+}
+a{
+    text-decoration:none;
+    color:#000;
+}
+ul li{
+    font-weight:bold;
+}
+ul li ul{
+    display:none;
+}
+ul li a:hover{
+    text-decoration:underline;
+}
+ul li:hover ul {
+    position:relative;
+    display:block;
+    left:-25px;
+}
+ul li ul li a{
+    color:#9f9f9f;
+}
+
+

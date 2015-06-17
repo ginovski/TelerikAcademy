@@ -1,0 +1,50 @@
+﻿body{
+    margin:0;
+    padding:0;
+    background-color:#3B3B3B;
+    font-family: Verdana, sans-serif;
+}
+form{
+    width:50%;
+    background-color:#343434;
+    padding:10px;
+    color:white;
+    height:auto;
+}
+img.monitor{
+    width:40px;
+    height:40px;
+}
+label, input, button{
+    float:right;
+    margin-top:10px;
+    margin-right:20px;
+}
+input[type='email']{
+    margin-right:50px;
+}
+button.submit{
+    border:1px solid #fff;
+    background: rgba(229, 110, 110, .9);
+    box-shadow: inset 0px -15px 5px #EC0B0F;
+    padding: 5px 15px;
+    border-radius:10px;
+    color:white;
+}
+h1{
+    color:#FFE513;
+    margin-left:10px;
+    font-size:25px;
+}
+article{
+    width:45%;
+    padding-left:10px;
+}
+article p{
+    color:#A9A9A9;
+    font-size:13px;
+}
+article p span{
+    color:#D2D2D2;
+}
+
