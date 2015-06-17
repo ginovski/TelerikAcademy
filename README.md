@@ -4,9 +4,9 @@
 <ul>
   <li>Module 1
     <ul>
-      <li><a href="#">C# Part 1</a></li>
-      <li><a href="#">C# Part 2</a></li>
-      <li><a href="#">OOP</a></li>
+      <li>C# Part 1</li>
+      <li>C# Part 2</li>
+      <li>OOP</li>
       <li><a href="https://github.com/ginovski/TelerikAcademy/tree/master/HTML">HTML</a></li>
       <li><a href="https://github.com/ginovski/TelerikAcademy/tree/master/CSS">CSS</a></li>
       <li><a href="https://github.com/ginovski/TelerikAcademy/tree/master/JavaScript%20Fundamentals">JavaScript Fundamentals</a></li>
@@ -14,12 +14,12 @@
   </li>
   <li>Module 2
     <ul>
-      <li><a href="#">High Quality Code</a></li>
+      <li><a href="https://github.com/ginovski/TelerikAcademy/tree/master/High-Quality%20Code">High Quality Code</a></li>
       <li><a href="https://github.com/ginovski/TelerikAcademy/tree/master/JavaScript%20OOP">JavaScript OOP</a></li>
-      <li><a href="#">JavaScript UI & DOM</a></li>
-      <li><a href="#">JavaScript Applications</a></li>
-      <li><a href="#">Databases & SQL</a></li>
-      <li><a href="#">Data Structures and Algorithms</a></li>
+      <li>JavaScript UI & DOM</li>
+      <li>JavaScript Applications</li>
+      <li>Databases & SQL</a></li>
+      <li>Data Structures and Algorithms</li>
     </ul>
   </li>
 </ul>
