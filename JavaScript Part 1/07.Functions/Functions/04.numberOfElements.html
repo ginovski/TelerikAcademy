@@ -1,0 +1,34 @@
+<!--04.Write a function to count the number of div elements on the web page-->
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div{
+            width: 50px;
+            height: 50px;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Look into console.</h1>
+    <div>1</div>
+    <hr/>
+    <div>2</div>
+    <hr/>
+    <div>3</div>
+    <hr/>
+    <div>4</div>
+    <script>
+        function countNumberOfDivs(){
+            var divs = document.getElementsByTagName('div');
+
+            return divs.length;
+        }
+
+        console.log("Divs count ---> " + countNumberOfDivs());
+    </script>
+</body>
+</html>
