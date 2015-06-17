@@ -1,0 +1,30 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+thead tr td{
+    background-color:#55B806;
+    color:#fff;
+    padding-right:35px;
+    border-right:1px solid #3B8F0A;
+}
+table {
+    border-collapse:collapse;
+    margin:10px auto;
+    border-left:1px solid #C5C3AB;
+    border-bottom:1px solid #C5C3AB;
+}
+td{
+    padding:5px;
+    border-right:1px solid #C5C3AB;
+    width:100px;
+}
+table tbody tr:last-child, tr:nth-child(2){
+    background-color:#ECECEC;
+}
+img{
+    width:20px;
+    height:20px;
+    float:left;
+    padding-right:5px;
+}

@@ -1,0 +1,46 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#595959;
+}
+table{
+    margin:20px auto;
+}
+table thead tr td{
+    color:#ABABAB;
+    font-size:25px;
+}
+table tbody tr td:first-child{
+    font-style:italic;
+    color:#f2f2f2;
+}
+table tbody tr td:last-child{
+    color: #cfcfcf;
+    padding-bottom:10px;
+}
+table tbody tr td.yellow{
+    color:#f7ce8d;
+    padding-bottom:10px;
+}
+#red{
+    color:#ff0000;
+    font-weight:bold;
+    padding-top:0;
+    padding-bottom:10px;
+}
+#notAnswered{
+    color:#f67f25;
+    padding-bottom:0;
+}
+table tbody tr td.name {
+    color:#f7ce8d;
+    padding-bottom:0;
+}
+img{
+    width:16px;
+    height:16px;
+}
+
+
