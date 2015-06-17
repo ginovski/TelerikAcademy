@@ -1,0 +1,24 @@
+ul li {
+  display: inline-block;
+  list-style-type: none; }
+
+img.picture-min {
+  width: 150px;
+  height: 100px;
+  opacity: 0.7; }
+
+img.picture-min:hover {
+  opacity: 1; }
+
+ul {
+  margin: 0 auto; }
+
+div img {
+  display: none; }
+
+:target {
+  display: block !important;
+  margin: 0 auto;
+  width: 800px;
+  height: 500px; }
+
