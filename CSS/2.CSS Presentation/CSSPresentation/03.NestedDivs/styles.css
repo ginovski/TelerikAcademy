@@ -1,0 +1,9 @@
+﻿div {
+    width: 90%;
+    background-color: black;
+    border: 2px solid red;
+    border-radius: 55px;
+}
+div#hidden{
+    display:none; /*Hide the divs after 20th so that we can make the page like in the presentation*/
+}

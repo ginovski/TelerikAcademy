@@ -1,0 +1,240 @@
+﻿<!-- I'm using Windows 8, so that the calculator looks like Win 8 Calc -->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Windows Calculator</title>
+</head>
+<body>
+    <div id="windowsBar">
+       <img src="Calculator_Windows_7_Icon.png" />
+       <h1>Calculator</h1>
+        <button class="close">r</button>
+        <button>1</button>
+        <button>0</button>
+        <div id="nav">
+            <div class="options">
+                <a class="buttonsOptions" href="#"><span>V</span>iew</a>
+                <a class="buttonsOptions" href="#"><span>E</span>dit</a>
+               <a class="buttonsOptions" href="#"><span>H</span>elp</a>
+            </div>
+            <table id="textbox">
+                <tr>
+                    <td>
+                        <input class="textbox" dir="RTL" />
+                    </td>
+                </tr>
+            </table>
+            <table id="textboxnumbers" cellpadding="2px">
+                <tr>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td class="center">0000</td>
+                    <td class="right">0000</td>
+                </tr>
+                <tr>
+                    <td>63</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>47</td>
+                    <td></td>
+                    <td></td>
+                    <td class="right">32</td>
+                </tr>
+                <tr>
+                    <td>0000</td>
+                    <td>0000</td>
+                    <td>1000</td>
+                    <td>0111</td>
+                    <td>0001</td>
+                    <td>1011</td>
+                    <td class="center">1011</td>
+                    <td class="right">0111</td>
+                </tr>
+            </table>
+            <table cellpadding="2px">
+                <tr>
+                    <td rowspan="4">
+                        <form class="radio">
+                            <br />
+                            <input type="radio" name="maths" value="Hex" />Hex<br />
+                            <input type="radio" name="maths" value="Dec" />Dec<br />
+                            <br />
+                            <input type="radio" name="maths" value="Oct" />Oct<br />
+                            <input type="radio" name="maths" value="Bin" />Bin
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="empty"></div>
+                    </td>
+                    <td>
+                        <button class="buttons">Mod</button>
+                    </td>
+                    <td>
+                        <div class="empty">A</div>
+                    </td>
+                    <td>
+                        <div class="empty">MC</div>
+                    </td>
+                    <td>
+                        <div class="empty">MR</div>
+                    </td>
+                    <td>
+                        <div class="empty">MS</div>
+                    </td>
+                    <td>
+                        <div class="empty">M+</div>
+                    </td>
+                    <td>
+                        <div class="empty">M-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="buttons">(</button>
+                    </td>
+                    <td>
+                        <button class="buttons">)</button>
+                    </td>
+                    <td>
+                        <div class="empty">B</div>
+                    </td>
+                    <td>
+                        <button class="buttons">&#8592;</button>
+                    </td>
+                    <td>
+                        <button class="buttons">CE</button>
+                    </td>
+                    <td>
+                        <button class="buttons">C</button>
+                    </td>
+                    <td>
+                        <button class="buttons">&#177;</button>
+                    </td>
+                    <td>
+                        <div class="empty">&#8730;</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="buttons">RoL</button>
+                    </td>
+                    <td>
+                        <button class="buttons">RoR</button>
+                    </td>
+                    <td>
+                        <div class="empty">C</div>
+                    </td>
+                    <td>
+                        <button class="buttons">7</button>
+                    </td>
+                    <td>
+                        <button class="buttons">8</button>
+                    </td>
+                    <td>
+                        <button class="buttons">9</button>
+                    </td>
+                    <td>
+                        <button class="buttons">/</button>
+                    </td>
+                    <td>
+                        <div class="empty">%</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="4">
+                        <form class="radio">
+                            <br />
+                            <input type="radio" name="maths" value="Qword" />Qword<br />
+                            <input type="radio" name="maths" value="Dword" />Dword<br />
+                            <br />
+                            <input type="radio" name="maths" value="Word" />Word<br />
+                            <input type="radio" name="maths" value="Bytes" />Byte
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="buttons">Or</button>
+                    </td>
+                    <td>
+                        <button class="buttons">Xor</button>
+                    </td>
+                    <td>
+                        <div class="empty">D</div>
+                    </td>
+                    <td>
+                        <button class="buttons">4</button>
+                    </td>
+                    <td>
+                        <button class="buttons">5</button>
+                    </td>
+                    <td>
+                        <button class="buttons">6</button>
+                    </td>
+                    <td>
+                        <button class="buttons">*</button>
+                    </td>
+                    <td>
+                        <div class="empty">1/x</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="buttons">Lsh</button>
+                    </td>
+                    <td>
+                        <button class="buttons">Rsh</button>
+                    </td>
+                    <td>
+                        <div class="empty">E</div>
+                    </td>
+                    <td>
+                        <button class="buttons">1</button>
+                    </td>
+                    <td>
+                        <button class="buttons">2</button>
+                    </td>
+                    <td>
+                        <button class="buttons">3</button>
+                    </td>
+                    <td>
+                        <button class="buttons">-</button>
+                    </td>
+                    <td rowspan="2">
+                        <button class="equal">=</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="buttons">Not</button>
+                    </td>
+                    <td>
+                        <button class="buttons">And</button>
+                    </td>
+                    <td>
+                        <div class="empty">F</div>
+                    </td>
+                    <td colspan="2">
+                        <button class="zero">0</button>
+                    </td>
+                    <td>
+                        <div class="empty">.</div>
+                    </td>
+                    <td>
+                        <button class="buttons">+</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
