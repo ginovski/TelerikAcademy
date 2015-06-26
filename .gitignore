@@ -6,6 +6,7 @@
 *.user
 *.userosscache
 *.sln.docstates
+.idea/
 Thumbs.db
 
 # User-specific files (MonoDevelop/Xamarin Studio)
