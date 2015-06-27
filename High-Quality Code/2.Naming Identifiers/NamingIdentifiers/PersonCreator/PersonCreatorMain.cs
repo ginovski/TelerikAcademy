@@ -9,12 +9,12 @@
             person.Age = age;
             if (age % 2 == 0)
             {
-                person.Name = "Батката";
+                person.Name = "Strong man";
                 person.Gender = Gender.Male;
             }
             else
             {
-                person.Name = "Мацето";
+                person.Name = "Girl";
                 person.Gender = Gender.Female;
             }
         }
