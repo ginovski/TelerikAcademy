@@ -1,4 +1,4 @@
-﻿function onButtonClick() {
+﻿function checkIfBrowserIsMozilla() {
     'use strict';
 
     var currentWindow = window,
