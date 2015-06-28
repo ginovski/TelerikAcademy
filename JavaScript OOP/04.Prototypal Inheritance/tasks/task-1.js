@@ -29,55 +29,167 @@
 
 
 /* Example
-
  var meta = Object.create(domElement)
  .init('meta')
  .addAttribute('charset', 'utf-8');
-
  var head = Object.create(domElement)
  .init('head')
  .appendChild(meta)
-
  var div = Object.create(domElement)
  .init('div')
  .addAttribute('style', 'font-size: 42px');
-
  div.content = 'Hello, world!';
-
  var body = Object.create(domElement)
  .init('body')
  .appendChild(div)
  .addAttribute('id', 'cuki')
  .addAttribute('bgcolor', '#012345');
-
  var root = Object.create(domElement)
  .init('html')
  .appendChild(head)
  .appendChild(body);
-
  console.log(root.innerHTML);
  Outputs:
  <html><head><meta charset="utf-8"></meta></head><body bgcolor="#012345" id="cuki"><div style="font-size: 42px">Hello, world!</div></body></html>
  */
 
-
 function solve() {
     var domElement = (function () {
-        var domElement = {
-            init: function(type) {
-                this.type = type;
-            },
-            appendChild: function(child) {
-            },
-            addAttribute: function(name, value) {
-            },
-            get innerHTML(){
 
+        function getSortedAttributes(attributes) {
+            return Object.keys(attributes).sort().reduce(function (prev, currentKey) {
+                if (attributes[currentKey] === undefined) {
+                    return prev;
+                }
+                return prev + ' ' + currentKey + '="' + attributes[currentKey] + '"';
+            }, '');
+        }
+
+        var domElement = {
+            init: function (type) {
+                this.type = type;
+                this.children = [];
+                this.attributes = {};
+
+                return this;
+            },
+
+            appendChild: function (child) {
+                switch (true) {
+                    case domElement.isPrototypeOf(child):
+                        child.parent = this;
+                    case typeof child === 'string':
+                        this.children.push(child);
+                        break;
+                    default:
+                        throw new Error();
+                }
+
+                return this;
+            },
+
+            addAttribute: function (name, value) {
+                if (typeof name !== 'string' || !/^(?:\w|-)+$/.test(name)) {
+                    throw new Error();
+                }
+
+                this.attributes[name] = value;
+
+                return this;
+            },
+
+            removeAttribute: function(name) {
+                if (this.attributes.hasOwnProperty(name)) {
+                    this.attributes[name] = undefined;
+                    return this;
+                } else {
+                    throw new Error();
+                }
+            },
+
+            get innerHTML() {
+                var child,
+                    innerHtml,
+                    attributesString = getSortedAttributes(this.attributes);
+
+                innerHtml = '<' + this.type + attributesString + '>';
+
+                for (var i = 0, len = this.children.length; i < len; i += 1) {
+                    child = this.children[i];
+
+                    if (typeof child === 'string') {
+                        innerHtml += child;
+                    } else {
+                        innerHtml += child.innerHTML;
+                    }
+                }
+
+                innerHtml += this.content;
+                innerHtml += '</' + this.type + '>';
+
+                return innerHtml;
+            },
+
+            get type() {
+                return this._type;
+            },
+
+            set type(value) {
+                if (typeof value !== 'string' || !/^\w+$/.test(value)) {
+                    throw new Error()
+                }
+
+                this._type = value;
+                return this;
+            },
+
+            get content() {
+                if (this.children.length || this._content == null) {
+                    return '';
+                }
+
+                return this._content;
+            },
+
+            set content(value) {
+                if (typeof value !== 'string') {
+                    throw new Error();
+                }
+
+                this._content = value;
+                return this;
+            },
+
+            get attributes() {
+                return this._attributes;
+            },
+
+            set attributes(value) {
+                this._attributes = value;
+                return this;
+            },
+
+            get children() {
+                return this._children;
+            },
+
+            set children(value) {
+                this._children = value;
+                return this;
+            },
+
+            get parent() {
+                return this._parent;
+            },
+
+            set parent(value) {
+                this._parent = value;
+                return this;
             }
         };
 
         return domElement;
-    } ());
+    }());
 
     return domElement;
 }
