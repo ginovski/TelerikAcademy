@@ -1,0 +1,139 @@
+﻿<!--Draw the following graphics using canvas:-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <canvas id="the-canvas" width="700" height="500" onclick="getCoordinates(event);">Your browser do not support HTML5
+    </canvas>
+    <script>
+        var canvas = document.getElementById('the-canvas'),
+            ctx = canvas.getContext('2d');
+
+        function drawHouse() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            //house
+            ctx.beginPath();
+            ctx.fillStyle = "rgb(151, 91, 91)";
+            ctx.fillRect(200, 200, 280, 210);
+            ctx.strokeRect(200, 200, 280, 210);
+            ctx.moveTo(200, 200);
+            ctx.lineTo(330, 50);
+            ctx.lineTo(480, 200);
+            ctx.closePath();
+            ctx.fill();
+            ctx.stroke();
+
+            //chimney
+            ctx.beginPath();
+            ctx.moveTo(390, 160);
+            ctx.lineTo(390, 80);
+            ctx.lineTo(415, 80);
+            ctx.lineTo(415, 160);
+            ctx.fill();
+            ctx.stroke();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.save();
+            ctx.scale(2.3, 0.5);
+            ctx.arc(403 / 2.3, 80 / 0.5, 5, 0, 2 * Math.PI);
+            ctx.fill();
+            ctx.stroke();
+            ctx.restore();
+            ctx.closePath();
+
+            //windows - 1st
+            ctx.beginPath();
+            ctx.fillStyle = 'black';
+            ctx.strokeStyle = "rgb(151, 91, 91)";
+            ctx.fillRect(220, 220, 100, 70);
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.moveTo(270, 220);
+            ctx.lineTo(270, 290);
+            ctx.stroke();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.moveTo(220, 255);
+            ctx.lineTo(320, 255);
+            ctx.stroke();
+            ctx.closePath();
+
+            //windows - 2nd
+            ctx.beginPath();
+            ctx.fillRect(360, 220, 100, 70);
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.moveTo(410, 220);
+            ctx.lineTo(410, 290);
+            ctx.stroke();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.moveTo(360, 255);
+            ctx.lineTo(460, 255);
+            ctx.stroke();
+            ctx.closePath();
+
+            //windows - 3rd
+            ctx.beginPath();
+            ctx.fillRect(360, 320, 100, 70);
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.moveTo(410, 320);
+            ctx.lineTo(410, 390);
+            ctx.stroke();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.moveTo(360, 355);
+            ctx.lineTo(460, 355);
+            ctx.stroke();
+            ctx.closePath();
+
+            //door
+            ctx.beginPath();
+            ctx.strokeStyle = 'black';
+            ctx.moveTo(270, 410);
+            ctx.lineTo(270, 330);
+            ctx.stroke();
+            ctx.closePath();
+            ctx.beginPath();
+            ctx.save();
+            ctx.scale(1.6, 1);
+            ctx.arc(270 / 1.6, 350, 20, 0, Math.PI, true);
+            ctx.restore();
+            ctx.lineTo(238, 410);
+            ctx.stroke();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.moveTo(302, 410);
+            ctx.lineTo(302, 350);
+            ctx.stroke();
+            ctx.closePath();
+
+            //doorlock
+            ctx.beginPath();
+            ctx.arc(260, 390, 3, 0, 2 * Math.PI);
+            ctx.stroke();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.arc(280, 390, 3, 0, 2 * Math.PI);
+            ctx.stroke();
+            ctx.closePath();
+        }
+ 
+
+        drawHouse();
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,98 @@
+﻿<!--Draw the following graphics using canvas:-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <canvas id="the-canvas" width="700" height="500" onclick="getCoordinates(event);">Your browser do not support HTML5
+    </canvas>
+    <script>
+        var canvas = document.getElementById('the-canvas'),
+            ctx = canvas.getContext('2d');
+
+        function drawBike() {
+            //back tyre
+            ctx.beginPath();
+            ctx.fillStyle = 'rgb(144, 202, 215)';
+            ctx.strokeStyle = 'rgb(20, 80, 90)';
+            ctx.moveTo(200, 200);
+            ctx.arc(200, 200, 45, 0, 2 * Math.PI);
+            ctx.stroke();
+            ctx.fill();
+            ctx.closePath();
+
+            //triangle
+            ctx.beginPath();
+            ctx.moveTo(200, 200);
+            ctx.lineTo(300, 200);
+            ctx.lineTo(270, 130);
+            ctx.closePath();
+            ctx.stroke();
+
+            //seat
+            ctx.beginPath();
+            ctx.moveTo(270, 130);
+            ctx.lineTo(260, 110);
+            ctx.lineTo(280, 110);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(260, 110);
+            ctx.lineTo(260, 110);
+            ctx.lineTo(240, 110);
+            ctx.stroke();
+
+            //triangle
+            ctx.beginPath();
+            ctx.moveTo(270, 130);
+            ctx.lineTo(400, 130);
+            ctx.lineTo(300, 200);
+            ctx.closePath();
+            ctx.stroke();
+
+            //pedals
+            ctx.beginPath();
+            ctx.arc(300, 200, 15, 45 * Math.PI / 180, 220 * Math.PI / 180);
+            ctx.lineTo(280, 180);
+            ctx.stroke();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.arc(300, 200, 15, 220 * Math.PI / 180, 45 * Math.PI / 180);
+            ctx.lineTo(320, 220);
+            ctx.stroke();
+            ctx.closePath();
+
+            //front tyre
+            ctx.beginPath();
+            ctx.arc(410, 200, 45, 0, 2 * Math.PI);
+            ctx.fill();
+            ctx.stroke();
+
+            //steering wheel
+            ctx.beginPath();
+            ctx.moveTo(400, 130);
+            ctx.lineTo(410, 200);
+            ctx.stroke();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.moveTo(400, 130);
+            ctx.lineTo(395, 90);
+            ctx.lineTo(430, 60);
+            ctx.stroke();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.moveTo(395, 90);
+            ctx.lineTo(350, 100);
+            ctx.stroke();
+            ctx.closePath();
+        }
+
+        drawBike();
+    </script>
+</body>
+</html>
+

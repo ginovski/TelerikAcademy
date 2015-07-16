@@ -1,0 +1,63 @@
+﻿<!--Draw a circle that flies inside a box
+When it reaches an edge, it should bounce that edge-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <canvas id="the-canvas" width="700" height="500" style="border: 1px solid black">Your browser do not support HTML 5
+    </canvas>
+
+    <script>
+        const radius = 20,
+              step = 5;
+
+        var canvas = document.getElementById('the-canvas'),
+            ctx = canvas.getContext('2d'),
+            xPos = 30,
+            yPos = 30,
+            directionUp = false,
+            directionRight = true;
+
+        function bounceAnimation() {
+            ctx.beginPath();
+            ctx.arc(xPos, yPos, radius, 0, 2 * Math.PI);
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.stroke();
+
+            if (directionUp === false && directionRight === true) {
+                xPos += step;
+                yPos += step;
+            }
+            else if (directionUp === true && directionRight === true) {
+                xPos += step;
+                yPos -= step;
+            }
+            else if (directionUp === true && directionRight === false) {
+                xPos -= step;
+                yPos -= step;
+            }
+            else {
+                xPos -= step;
+                yPos += step;
+            }
+
+            if (yPos >= canvas.height - radius) {
+                directionUp = true;
+            }
+            if (xPos >= canvas.width - radius) {
+                directionRight = false;
+            }
+            if (yPos <= radius) {
+                directionUp = false;
+            }
+            if (xPos <= radius) {
+                directionRight = true;
+            }
+            requestAnimationFrame(bounceAnimation);
+        }
+        bounceAnimation();
+    </script>
+</body>
+</html>

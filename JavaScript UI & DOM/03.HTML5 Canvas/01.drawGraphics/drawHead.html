@@ -1,0 +1,115 @@
+﻿<!--Draw the following graphics using canvas:-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <canvas id="the-canvas" width="700" height="500" onclick="getCoordinates(event);">Your browser do not support HTML5
+    </canvas>
+    <script>
+        var canvas = document.getElementById('the-canvas'),
+            ctx = canvas.getContext('2d');
+
+        function drawHead() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.beginPath();
+            ctx.save();
+            ctx.fillStyle = 'rgb(144, 202, 215)';
+            ctx.arc(200, 200, 50, 0, 2 * Math.PI);
+            ctx.fill();
+            ctx.restore();
+
+            ctx.moveTo(195, 190);
+            ctx.lineTo(185, 210);
+            ctx.lineTo(195, 210);
+            ctx.stroke();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.save();
+            ctx.scale(1.5, 0.9);
+            ctx.arc(170 / 1.5, 190 / 0.9, 6, 0, 2 * Math.PI);//215 / 1.5 & 190 / 0.9 means that we get the                                                                 last coordinates before scale
+            ctx.stroke();
+            ctx.restore();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.save();
+            ctx.scale(1.5, 0.9);
+            ctx.arc(215 / 1.5, 190 / 0.9, 6, 0, 2 * Math.PI); //215 / 1.5 & 190 / 0.9 means that we get the                                                                 last coordinates before scale
+            ctx.stroke();
+            ctx.restore();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.save();
+            ctx.fillStyle = 'rgb(34, 84, 95)';
+            ctx.scale(0.8, 1.5);
+            ctx.arc(167 / 0.8, 190 / 1.5, 3, 0, 2 * Math.PI);
+            ctx.stroke();
+            ctx.fill();
+            ctx.restore();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.save();
+            ctx.fillStyle = 'rgb(34, 84, 95)';
+            ctx.scale(0.8, 1.5);
+            ctx.arc(212 / 0.8, 190 / 1.5, 3, 0, 2 * Math.PI);
+            ctx.stroke();
+            ctx.fill();
+            ctx.restore();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.save();
+            ctx.scale(2.5, 0.9);
+            ctx.arc(195 / 2.5, 230 / 0.9, 8, 0, 2 * Math.PI);
+            ctx.stroke();
+            ctx.restore();
+            ctx.closePath();
+
+            //hat
+
+            ctx.beginPath();
+            ctx.save();
+            ctx.fillStyle = 'rgb(57, 102, 147)';
+            ctx.scale(3, 0.6);
+            ctx.arc(195 / 3, 160 / 0.6, 20, 0, 2 * Math.PI);
+            ctx.stroke();
+            ctx.fill();
+            ctx.restore();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.fillStyle = 'rgb(57, 102, 147)';
+            ctx.moveTo(170, 150);
+            ctx.lineTo(170, 90);
+            ctx.lineTo(230, 90);
+            ctx.lineTo(230, 150);
+            ctx.fill();
+            ctx.stroke()
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.save();
+            ctx.scale(1.7, 0.7);
+            ctx.arc(200 / 1.7, 90 / 0.7, 18, 0, 2 * Math.PI);
+            ctx.fill();
+            ctx.stroke();
+            ctx.restore();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.scale(2, 0.7);
+            ctx.arc(200 / 2, 150 / 0.7, 15, 0, Math.PI);
+            ctx.stroke();
+            ctx.closePath();
+        }
+
+        drawHead();
+    </script>
+</body>
+</html>
+
