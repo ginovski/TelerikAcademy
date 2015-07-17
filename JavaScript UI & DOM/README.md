@@ -1,1 +1,1 @@
-# JS UI & DOM
+# JavaScript UI & DOM
