@@ -1,4 +1,4 @@
-Homework: Operators and Expressions
+Homework: Document Object Model
 ==============================================
 
 ### Problem 1.	Divs inside other Divs
