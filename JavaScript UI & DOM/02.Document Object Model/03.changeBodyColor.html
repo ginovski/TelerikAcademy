@@ -1,0 +1,18 @@
+﻿<!--Create a function that gets the value of <input type="text"> ands prints its value to the console-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <input type="color" id="color" />
+    <button onclick="changeBodyColor();">Change color</button>
+
+    <script>
+        function changeBodyColor() {
+            var color = document.getElementById("color").value;
+            document.body.style.background = color;
+        }
+    </script>
+</body>
+</html>

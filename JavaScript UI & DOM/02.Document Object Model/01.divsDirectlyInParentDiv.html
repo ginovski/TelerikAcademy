@@ -1,0 +1,50 @@
+﻿<!--Write a script that selects all the div nodes that are directly inside other div elements
+Create a function using querySelectorAll()
+Create a function using getElementsByTagName()-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+
+    <div>
+        <div> <!--Directly-->
+            <form>
+                <div><!--This div won't be selected is not directly-->
+                    <div>
+                        <!--Directly-->
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div>
+        <div>
+            <!--Directly -->
+        </div>
+    </div>
+
+    <script>
+        //getElementsByTagName
+        var divs = document.getElementsByTagName('div');
+        var counter = 0;
+
+        for (var i = 0; i < divs.length; i++) {
+            if (divs[i].parentNode instanceof HTMLDivElement) {
+                counter++;
+            }
+        }
+
+        jsConsole.writeLine("Divs directly in other div elements are: " + counter + " (getElementsByTagName)");
+
+        //querySelectorAll
+        divs = document.querySelectorAll("div > div");
+
+        jsConsole.writeLine("Divs directly in other div elements are: " + divs.length + " (querySelector)");
+    </script>
+</body>
+</html>

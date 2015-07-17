@@ -1,0 +1,22 @@
+﻿<!--Create a function that gets the value of <input type="text"> ands prints its value to the console-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <input type="text" id="input" />
+    <button onclick="printInputValueOnConsole();">Print</button>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+
+    <script>
+        function printInputValueOnConsole() {
+            var inputText = document.getElementById("input").value;
+            jsConsole.writeLine(inputText);
+        }
+    </script>
+</body>
+</html>
+
