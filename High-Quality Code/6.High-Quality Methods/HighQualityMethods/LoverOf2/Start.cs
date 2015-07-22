@@ -1,4 +1,4 @@
-﻿//C# Exam task 3
+﻿// C# Exam task 3
 namespace LoverOf2
 {
     using System;

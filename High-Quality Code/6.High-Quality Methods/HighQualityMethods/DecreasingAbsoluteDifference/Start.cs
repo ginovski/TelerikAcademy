@@ -1,4 +1,4 @@
-﻿//C#2 Exam Task 2
+﻿// C#2 Exam Task 2
 namespace DecreasingAbsoluteDifference
 {
     using System;
@@ -18,13 +18,13 @@ namespace DecreasingAbsoluteDifference
 
             for (int i = 0; i < sequences.Count; i++)
             {
-                var differences = SequencesUtillities.(sequences[i]);
+                var differences = SequencesUtillities.CalculateDifferences(sequences[i]);
                 sequencesFromDifferences.Add(differences);
             }
 
             for (int i = 0; i < sequencesFromDifferences.Count; i++)
             {
-                Console.WriteLine(SequencesUtillities.(sequencesFromDifferences[i]));
+                Console.WriteLine(SequencesUtillities.IsDecreasing(sequencesFromDifferences[i]));
             }
         }
     }

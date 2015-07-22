@@ -4,7 +4,7 @@
     using System.Collections.Generic;
     using System.Linq;
 
-    public class SequencesUtillities
+    public static class SequencesUtillities
     {
         public static List<long[]> ParseSequences(int sequencesCount)
         {

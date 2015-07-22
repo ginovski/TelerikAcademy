@@ -1,4 +1,4 @@
-﻿//C#2 Exam Task 1
+﻿// C#2 Exam Task 1
 namespace EnigmaCat
 {
     using System;

@@ -3,7 +3,7 @@
     using System.Collections.Generic;
     using System.Numerics;
 
-    public class EnigmaCatUtillities
+    public static class EnigmaCatUtillities
     {
         public static ICollection<string> ConvertDecimalCatNumbersTo26(IList<BigInteger> wordsInDecimal)
         {

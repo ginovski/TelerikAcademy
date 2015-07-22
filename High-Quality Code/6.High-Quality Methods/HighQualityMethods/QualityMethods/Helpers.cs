@@ -2,7 +2,7 @@
 {
     using System;
 
-    public class Helpers
+    public static class Helpers
     {
         public static double CalculateTriangleArea(double a, double b, double c)
         {
@@ -100,6 +100,5 @@
         {
             return firstPointY == secondPointY;
         }
-
     }
 }

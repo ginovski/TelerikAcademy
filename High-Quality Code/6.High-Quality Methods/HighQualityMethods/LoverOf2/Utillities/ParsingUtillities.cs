@@ -3,7 +3,7 @@
     using System;
     using System.Linq;
 
-    public class ParsingUtillities
+    public static class ParsingUtillities
     {
         public static int[] ParsePathPositions(string pathPositions)
         {

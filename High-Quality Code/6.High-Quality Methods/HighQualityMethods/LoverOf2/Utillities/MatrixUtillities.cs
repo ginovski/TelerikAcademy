@@ -3,7 +3,7 @@
     using System;
     using System.Numerics;
 
-    public class MatrixUtillities
+    public static class MatrixUtillities
     {
         public static BigInteger CalculateSum(int[] pathPositions, BigInteger[,] field)
         {
@@ -47,11 +47,9 @@
 
                         pawnPositionRow = pathRow;
                     }
-
                 }
                 else
                 {
-
                     for (int row = pawnPositionRow - 1; row >= pathRow; row--)
                     {
                         if (field[row, pawnPositionCol] != -1)
@@ -65,21 +63,18 @@
                     {
                         if (field[row, pawnPositionCol] != -1)
                         {
-
                             sum += field[row, pawnPositionCol];
                             field[row, pawnPositionCol] = -1;
                         }
                     }
 
                     pawnPositionRow = pathRow;
-
                 }
 
                 for (int col = pawnPositionCol + 1; col <= pathCol; col++)
                 {
                     if (field[pawnPositionRow, col] != -1)
                     {
-
                         sum += field[pawnPositionRow, col];
                         field[pawnPositionRow, col] = -1;
                     }

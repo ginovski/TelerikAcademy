@@ -4,7 +4,7 @@
     using System.Numerics;
     using System.Text;
 
-    public class MathUtillities
+    public static class MathUtillities
     {
         public static BigInteger ConvertFrom17ToDecimal(int[] number)
         {
