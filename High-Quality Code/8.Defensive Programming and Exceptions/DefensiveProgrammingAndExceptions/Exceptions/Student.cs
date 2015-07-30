@@ -74,7 +74,7 @@
         public double CalcAverageExamResultInPercents()
         {
             double[] examScore = new double[this.Exams.Count];
-            IList<ExamResult> examResults = CheckExams();
+            IList<ExamResult> examResults = this.CheckExams();
             for (int i = 0; i < examResults.Count; i++)
             {
                 examScore[i] =

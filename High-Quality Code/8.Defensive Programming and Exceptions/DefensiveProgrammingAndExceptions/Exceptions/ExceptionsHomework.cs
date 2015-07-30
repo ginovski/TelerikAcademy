@@ -13,19 +13,19 @@
             Console.WriteLine(substr);
 
             var subarr = StudentSystemUtils.Subsequence(new int[] { -1, 3, 2, 1 }, 0, 2);
-            Console.WriteLine(String.Join(" ", subarr));
+            Console.WriteLine(string.Join(" ", subarr));
 
             var allarr = StudentSystemUtils.Subsequence(new int[] { -1, 3, 2, 1 }, 0, 4);
-            Console.WriteLine(String.Join(" ", allarr));
+            Console.WriteLine(string.Join(" ", allarr));
 
             var emptyarr = StudentSystemUtils.Subsequence(new int[] { -1, 3, 2, 1 }, 0, 0);
-            Console.WriteLine(String.Join(" ", emptyarr));
+            Console.WriteLine(string.Join(" ", emptyarr));
 
             Console.WriteLine(StudentSystemUtils.ExtractEnding("I love C#", 2));
             Console.WriteLine(StudentSystemUtils.ExtractEnding("Nakov", 4));
             Console.WriteLine(StudentSystemUtils.ExtractEnding("beer", 4));
-            // Throws error because count is bigger than string length
-            // Console.WriteLine(StudentSystemUtils.ExtractEnding("Hi", 100));
+            //// Throws error because count is bigger than string length
+            //// Console.WriteLine(StudentSystemUtils.ExtractEnding("Hi", 100));
 
             if (StudentSystemUtils.CheckPrime(23))
             {
