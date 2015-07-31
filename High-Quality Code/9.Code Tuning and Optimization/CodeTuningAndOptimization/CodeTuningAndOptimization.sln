@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.CompareSimpleMaths", "CompareSimpleMaths\02.CompareSimpleMaths.csproj", "{A8C4325D-E5C4-48BE-AD49-A15F19BE706A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.SolarSystem", "SolarSystem\01.SolarSystem.csproj", "{2F30E9AF-8256-40AF-B356-EA14E55CE9D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.CompareAdvancedMaths", "CompareAdvancedMaths\03.CompareAdvancedMaths.csproj", "{9F371307-7D55-4E59-A1E1-9A5D4A6E4690}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{A8C4325D-E5C4-48BE-AD49-A15F19BE706A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8C4325D-E5C4-48BE-AD49-A15F19BE706A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8C4325D-E5C4-48BE-AD49-A15F19BE706A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F30E9AF-8256-40AF-B356-EA14E55CE9D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F30E9AF-8256-40AF-B356-EA14E55CE9D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F30E9AF-8256-40AF-B356-EA14E55CE9D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F30E9AF-8256-40AF-B356-EA14E55CE9D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F371307-7D55-4E59-A1E1-9A5D4A6E4690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F371307-7D55-4E59-A1E1-9A5D4A6E4690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F371307-7D55-4E59-A1E1-9A5D4A6E4690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F371307-7D55-4E59-A1E1-9A5D4A6E4690}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
