@@ -3,10 +3,12 @@ function solve(){
     $.fn.dropdownList = function(selector) {
         var select = $(selector);
         var dropdownWrapper = $('<div>').addClass('dropdown-list');
+
         var currentSelectedElement = $('<div>')
             .addClass('current')
             .attr('data-value', $(select.children()[0]).html())
             .html($(select.children()[0]).html());
+
         var optionsContainer = $('<div>').addClass('options-container').css({
             'position': 'absolute',
             'display': 'none'
@@ -23,6 +25,8 @@ function solve(){
                    $('.current')
                        .html($(this).html())
                        .attr('data-value', $(this).attr('data-value'));
+
+                    select.val($(this).attr('data-value'));
                 });
 
             optionsContainer.append(option);
@@ -46,9 +50,6 @@ function solve(){
 
         $('.dropdown-item').click(function(){
             $('.options-container').css('display', 'none');
-            $('.current')
-                .html($(this).html())
-                .attr('data-value', '');
         });
     };
 
