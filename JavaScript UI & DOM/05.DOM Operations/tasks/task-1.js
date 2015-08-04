@@ -28,7 +28,7 @@ module.exports = function () {
           domElement = document.getElementById(element);
       }
       else{
-          throw new Error('Element ')
+          throw new Error('Element is neither string or existing DOM element');
       }
       var len = contents.length;
       for(var j = 0; j < len; j += 1){
