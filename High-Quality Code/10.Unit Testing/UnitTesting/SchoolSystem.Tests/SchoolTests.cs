@@ -39,7 +39,7 @@
         [ExpectedException(typeof(ArgumentException))]
         public void TestAddStudentSchoolShouldBeFullAfter90000Students()
         {
-            for (int i = 0; i < 90000; i++)
+            for (int i = 0; i <= 90000; i++)
             {
                 this.school.AddStudent(this.student);
             }

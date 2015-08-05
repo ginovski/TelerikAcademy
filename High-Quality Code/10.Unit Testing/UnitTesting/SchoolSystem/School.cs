@@ -5,15 +5,15 @@
 
     public class School
     {
-        private static int id = 10000;
-
         private const int MaxStudents = 99999;
 
+        private int id;
         private IList<Student> students;
 
         public School()
         {
             this.students = new List<Student>();
+            this.id = 10000;
         }
 
         public IList<Student> Students
@@ -26,12 +26,12 @@
 
         public void AddStudent(Student student)
         {
-            if (id > MaxStudents)
+            if (this.id > MaxStudents)
             {
                 throw new ArgumentException("School is full");
             }
 
-            student.ID = id++;
+            student.ID = this.id++;
 
             this.students.Add(student);
         }
