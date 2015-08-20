@@ -3,12 +3,14 @@
     using System;
     using System.Collections.Generic;
 
+    using log4net;
+
     public class Course
     {
         private const int MaxCourseCapacity = 30;
 
         private string name;
-        private IList<Student> students;
+        private readonly IList<Student> students;
 
         public Course(string name)
         {
