@@ -10,7 +10,7 @@ Create a function that:
 
 function solve(){
   return function (students) {
-      var result = _.chain(students)
+      _.chain(students)
           .map(function(student){
               student.fullname = student.firstName + ' ' + student.lastName;
 
