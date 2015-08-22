@@ -9,8 +9,8 @@ Create a function that:
 
 function solve(){
     return function (animals) {
-        var totalNumberOfLegs = _.reduce(animals, function(memo, animal){
-            return memo + animal.legsCount;
+        var totalNumberOfLegs = _.reduce(animals, function(legsCounter, animal){
+            return legsCounter + animal.legsCount;
         }, 0);
 
         console.log('Total number of legs: ' + totalNumberOfLegs);
