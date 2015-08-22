@@ -11,7 +11,7 @@ Create a function that:
 */
 
 function solve(){
-  return function (students) {
+    return function (students) {
       var sortedAscending = _.chain(students)
           .map(function(student){
               student.fullname = student.firstName + ' ' + student.lastName;
@@ -29,7 +29,7 @@ function solve(){
       _.forEach(sortedDescending, function(student){
           console.log(student.fullname);
       });
-  };
+    };
 }
 
 module.exports = solve;

@@ -11,7 +11,7 @@ Create a function that:
 */
 
 function solve(){
-  return function (students) {
+    return function (students) {
       var highestMarkStudent = _.chain(students)
           .map(function(student){
               student.fullname = student.firstName + ' ' + student.lastName;
@@ -31,7 +31,7 @@ function solve(){
           .value();
 
       console.log(highestMarkStudent.fullname + ' has an average score of ' + highestMarkStudent.averageMark);
-  };
+    };
 }
 
 module.exports = solve;

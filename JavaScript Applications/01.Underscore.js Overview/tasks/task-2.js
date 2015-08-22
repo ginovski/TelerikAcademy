@@ -9,7 +9,7 @@ Create a function that:
 */
 
 function solve(){
-  return function (students) {
+    return function (students) {
       _.chain(students)
           .map(function(student){
               student.fullname = student.firstName + ' ' + student.lastName;
@@ -25,7 +25,7 @@ function solve(){
           .each(function(student){
               console.log(student.fullname);
           })
-  };
+    };
 }
 
 module.exports = solve;
