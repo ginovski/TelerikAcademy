@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+  <label for="red">Red</label>
+  <input type="radio" name="color" class="color" id="red" data-color="red">
+  </div>
+  <div>
+  <label for="green">Green</label>
+  <input type="radio" name="color" class="color" id="green" data-color="green">
+  </div>
+  <div></div>
+  <label for="blue">Blue</label>
+  <input type="radio" name="color" class="color" id="blue" data-color="blue">
+  </div>
+  <div>
+  <label for="yellow">Yellow</label>
+  <input type="radio" name="color" class="color" id="yellow" data-color="yellow">
+  </div>
+  <div>
+  <label for="orange">Orange</label>
+  <input type="radio" name="color" class="color" id="orange" data-color="orange">
+  </div>
+
+  <script src="../lib/jquery-2.1.4.min.js"></script>
+  <script>
+    $(function(){
+      $('.color').click(function(){
+        var color = $(this).data('color');
+        $('body').css('background-color', color);
+      })
+    })
+  </script>
+</body>
+</html>
