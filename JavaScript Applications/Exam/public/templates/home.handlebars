@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="row">
+      <div class="col-md-5 parent">
+        {{#each cookies}}
+        <h1 id="category">{{category}}</h1>
+        {{#each items}}
+        <div class="thumbnail">
+                {{#if ../../isLogged}}
+                  <button class="btn btn-primary pull-right reshare">Reshare</button>
+                {{/if}}
+                <h4 class="">{{shareDate}}</h4>
+                <img class="pull-left image" src="{{img}}" alt="">
+                <div class="clearfix"></div>
+                <div class="caption-full" id="cookie-data">
+                    <h4><a href="#">{{text}}</a>
+                    </h4>
+                    <p class="pull-left">
+                      {{#if ../../isLogged}}
+                      <button class="btn btn-success like">Like (<span class="likes">{{likes}}</span> likes)</button>
+                      <button class="btn btn-danger dislike">Dislike (<span class="dislikes">{{dislikes}}</span> dislikes)</button>
+                      {{else}}
+                      <span>{{likes}} likes</span>
+                      <span>{{dislikes}} dislikes</span>
+                      {{/if}}
+                      <span class="hidden cookie-id">{{id}}</span>
+                    </p>
+                    <div class="clearfix"></div>
+                </div>
+                <span class="hidden text">{{text}}</span>
+                <span class="hidden category">{{category}}</span>
+            </div>
+            {{/each}}
+        {{/each}}
+      </div>
+      <div class="col-md-3">
+        <div class="form-inline">
+          <input type="text" class="form-control" id="category-filter" placeholder="Filter by category">
+          <button class="btn btn-default" id="filter">Filter</button>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-inline">
+          <select class="form-control" id="sort">
+            <option value="Likes">Likes</option>
+            <option value="Share Date">Share Date</option>
+          </select>
+          <button class="btn btn-default" id="btn-sort">Sort</button>
+        </div>
+      </div>
+  </div>
+</div>

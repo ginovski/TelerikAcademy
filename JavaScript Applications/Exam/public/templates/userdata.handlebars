@@ -1,0 +1,9 @@
+{{#if isLogged}}
+  <li><a>{{username}}</a></li>
+  <li><a href="#/myCookie">Get hourly cookie</a></li>
+  <li><a href="#/cookies/share">Share cookie</a></li>
+  <li><button id="logout" class="btn btn-default navbar-btn">Logout</button></li>
+{{else}}
+  <li><a href="#/register">Register</a></li>
+  <li><a href="#/login">Login</a></li>
+{{/if}}
