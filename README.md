@@ -18,7 +18,7 @@
       <li><a href="https://github.com/ginovski/TelerikAcademy/tree/master/JavaScript%20OOP">JavaScript OOP</a></li>
       <li><a href="https://github.com/ginovski/TelerikAcademy/tree/master/JavaScript%20UI%20%26%20DOM">JavaScript UI & DOM</a></li>
       <li><a href="https://github.com/ginovski/TelerikAcademy/tree/master/JavaScript%20Applications">JavaScript Applications</a></li>
-      <li>Databases & SQL</a></li>
+      <li><a href="https://github.com/ginovski/TelerikAcademy/tree/master/Databases">Databases & SQL</a></li>
       <li>Data Structures and Algorithms</li>
     </ul>
   </li>
