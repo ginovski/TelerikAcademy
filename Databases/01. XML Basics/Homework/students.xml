@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="students.xslt"?>
+<students xmlns="urn:students">
+  <student>
+    <name>Pesho Peshov</name>
+    <sex>Male</sex>
+    <birthDate>01.02.1986</birthDate>
+    <phone>086512112</phone>
+    <email>pesho@site.com</email>
+    <course>Databases</course>
+    <specialty>Web Development</specialty>
+    <facultyNumber>675231123</facultyNumber>
+    <exams>
+      <exam>
+        <name>Databases Test 1</name>
+        <tutor>Ivaylo Kenov</tutor>
+        <score>70</score>
+      </exam>
+      <exam>
+        <name>Databases Test 2</name>
+        <tutor>Nikolay Kostov</tutor>
+        <score>50</score>
+      </exam>
+    </exams>
+  </student>
+  <student>
+    <name>Jane Peshova</name>
+    <sex>Female</sex>
+    <birthDate>15.03.1943</birthDate>
+    <phone>08123123</phone>
+    <email>jane@site.com</email>
+    <course>High-Quality Code</course>
+    <specialty>Mobile Development</specialty>
+    <facultyNumber>67541231</facultyNumber>
+    <exams>
+      <exam>
+        <name>High-Quality Code Test 1</name>
+        <tutor>Ivaylo Kenov</tutor>
+        <score>100</score>
+      </exam>
+      <exam>
+        <name>High-Quality Code Test 2</name>
+        <tutor>Doncho Minkov</tutor>
+        <score>30</score>
+      </exam>
+      <exam>
+        <name>High-Quality Code Final Exam</name>
+        <tutor>Nikolay Kostov</tutor>
+        <score>100</score>
+      </exam>
+    </exams>
+  </student>
+</students>
