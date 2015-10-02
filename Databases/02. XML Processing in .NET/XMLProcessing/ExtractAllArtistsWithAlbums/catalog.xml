@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<catalog>
+  <album>
+    <name>Ride the Lightning</name>
+    <artist>Metallica</artist>
+    <year>1984</year>
+    <producer>Metallica</producer>
+    <price>10</price>
+    <songs>
+      <song>
+        <title>Fight Fire with Fire</title>
+        <duration>4.45</duration>
+      </song>
+      <song>
+        <title>Ride the Lightning</title>
+        <duration>6.36</duration>
+      </song>
+      <song>
+        <title>Fade to Black</title>
+        <duration>6.57</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Euphoria</name>
+    <artist>Enrique Iglesias</artist>
+    <year>2010</year>
+    <producer>El Nasi</producer>
+    <price>8</price>
+    <songs>
+      <song>
+        <title>Dirty Dancer</title>
+        <duration>3.34</duration>
+      </song>
+      <song>
+        <title>Heartbreaker</title>
+        <duration>4.05</duration>
+      </song>
+      <song>
+        <title>Coming Home</title>
+        <duration>3.59</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>St. Anger</name>
+    <artist>Metallica</artist>
+    <year>2003</year>
+    <producer>Metallica</producer>
+    <price>12</price>
+    <songs>
+      <song>
+        <title>Frantic</title>
+        <duration>5.50</duration>
+      </song>
+      <song>
+        <title>St. Anger</title>
+        <duration>7.21</duration>
+      </song>
+    </songs>
+  </album>
+</catalog>
