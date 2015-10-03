@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dir dirName="root">
+  <dir dirName="root">
+    <dir dirName="inRoot">
+      <dir dirName="inInRoot" />
+      <file>InInInRootFile.txt</file>
+    </dir>
+    <file>InInRootFile.txt</file>
+    <file>InInRootFile2.txt</file>
+  </dir>
+  <file>inRootFile.txt</file>
+</dir>

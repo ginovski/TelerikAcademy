@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<albums>
+  <album>
+    <name>Ride the Lightning</name>
+    <artist>Metallica</artist>
+  </album>
+  <album>
+    <name>Euphoria</name>
+    <artist>Enrique Iglesias</artist>
+  </album>
+  <album>
+    <name>St. Anger</name>
+    <artist>Metallica</artist>
+  </album>
+</albums>
