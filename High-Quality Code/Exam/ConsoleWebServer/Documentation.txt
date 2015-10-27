@@ -1,0 +1,39 @@
+Design pattern: Factory Method
+	* Creating new ActionResult is FactoryMethod ActionResultFactory combines creating ActionResults by their type and additional settings like CORS and No-Cache
+
+Design pattern: Strategy
+	* Action results are strategies they can vary e.g. ContentActionResult, JsonActionResult, RedirectActionResult etc.
+	* Request processors are strategies they can vary e.g. OptionsRequestProcessor, StaticFileRequestProcessor etc.
+
+Design pattern: Template Method
+	* ActionResult.GetResponse() is template method, children provides the needed params - StatusCode, Content, ContentType
+	* RequestProcessor.Process() is template method. It always checks if the request can be processed and if not calls NextProcessor.Process(). Children define the process logic.
+
+Design pattern: Chain of Responsibility
+	* RequestProcessors are Chain of Responsibility, one request is sent to the first of the chain and if he can not process the request, he sends to the next RequestProcessor until we get to the last of the Chain
+
+Design pattern: Decorator
+	* 
+
+Found bugs:
+	* When file is not found "!" is missing from the message File fot found
+	* Server name - ConsoleWebServer had one non english letter
+	* In ProtocolVersionRequestProcessor, server processes requests to version <= 3.0 but it has to be < 3.0
+
+Found bottleneck:
+	* Removed recursive FileExists method in StaticFileHandler, otherwise used File.Exists() from System.IO
+
+Single responsibility principle
+	* Every class does only one thing e.g there are different request processors every one does a thing for which is responsible for
+
+Open/closed principle
+	* Every class can be extended and won't be modified because coupling between classes is reduced to minimum.
+
+Liskov substitution principle
+	* All base classes can be used as children classes without breaking the code
+
+Interface segregation principle
+	* Small defined interfaces, every interface defines only its logic, no more, no less
+
+Dependency inversion principle
+	* All classes depends on Interfaces and base classes, and there are no hidden dependencies. All dependencies are provided in the constructor on in method parameters

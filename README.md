@@ -19,7 +19,7 @@
       <li><a href="https://github.com/ginovski/TelerikAcademy/tree/master/JavaScript%20UI%20%26%20DOM">JavaScript UI & DOM</a></li>
       <li><a href="https://github.com/ginovski/TelerikAcademy/tree/master/JavaScript%20Applications">JavaScript Applications</a></li>
       <li><a href="https://github.com/ginovski/TelerikAcademy/tree/master/Databases">Databases & SQL</a></li>
-      <li>Data Structures and Algorithms</li>
+      <li><a href="https://github.com/ginovski/TelerikAcademy/tree/master/Data%20Structures%20and%20Algorithms">Data Structures and Algorithms</a></li>
     </ul>
   </li>
 </ul>
