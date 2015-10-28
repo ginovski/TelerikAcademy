@@ -24,7 +24,7 @@
 #####Answer: 
 The expected running time is O(n^2) because outer for loop iterates n-times and inner while also iterates n-times, because start=0 and end=arr.length - 1 (n - 1)
 
-2. What is the expected running time of the following C# code?
+2.. What is the expected running time of the following C# code?
   - Explain why using Markdown.
   - Assume the input matrix has size of `n * m`.
 
@@ -47,7 +47,7 @@ Every member is even and the inner loop will iterate m times on every n time for
 - Best Case: 
 Every member is odd and the inner loop will never iterate, so that the running time will be only for the outer => O(n)
 
-3. (*) What is the expected running time of the following C# code?
+3.. (*) What is the expected running time of the following C# code?
   - Explain why using Markdown.
   - Assume the input matrix has size of `n * m`.
 
