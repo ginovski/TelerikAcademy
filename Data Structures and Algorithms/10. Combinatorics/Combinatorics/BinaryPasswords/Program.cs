@@ -1,7 +1,9 @@
-﻿using System;
-
+﻿// 01. Двоични пароли
+// http://bgcoder.com/Contests/Practice/Index/132#0
 namespace BinaryPasswords
 {
+    using System;
+
     internal class Program
     {
         private static void Main(string[] args)

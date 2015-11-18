@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryPasswords", "BinaryPasswords\BinaryPasswords.csproj", "{A7940129-25A4-40FD-BC71-4C244D43E006}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryTrees", "BinaryTrees\BinaryTrees.csproj", "{136A07DB-C9F8-4226-895C-172E67EFCEB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorfulBallsSequence", "ColorfulBallsSequence\ColorfulBallsSequence.csproj", "{57BF6499-8453-484F-B5CF-4478E8C9FFD3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{A7940129-25A4-40FD-BC71-4C244D43E006}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7940129-25A4-40FD-BC71-4C244D43E006}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7940129-25A4-40FD-BC71-4C244D43E006}.Release|Any CPU.Build.0 = Release|Any CPU
+		{136A07DB-C9F8-4226-895C-172E67EFCEB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{136A07DB-C9F8-4226-895C-172E67EFCEB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{136A07DB-C9F8-4226-895C-172E67EFCEB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{136A07DB-C9F8-4226-895C-172E67EFCEB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57BF6499-8453-484F-B5CF-4478E8C9FFD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57BF6499-8453-484F-B5CF-4478E8C9FFD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57BF6499-8453-484F-B5CF-4478E8C9FFD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57BF6499-8453-484F-B5CF-4478E8C9FFD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
